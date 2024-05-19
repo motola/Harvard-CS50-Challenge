@@ -1,0 +1,8 @@
+1. Audio Aura would characterize by Tempo and also the depth genre of their favourite artists and also song impression, this would be songs listeners would typical search for as they have heard it somwehere and they liked it enough look for it. An API integration from Shazam can also be used.
+
+
+
+
+This also might not be a very effective way to determine Audio Aura as other important metric needs to be considered to accurately determine a person's audio aura.
+
+Better ways of calculating this aura would be to look at metrics such as time of day, as this could tell us more about the persons motives for listening to music, if a person as a consistent time for listening to a particular or group of songs, it maybe to help sith mood disorders, sleep, work, inspiration, dance etc. Also a playlist can help us accurately determine a person's aura mix and what they like from music all over the world

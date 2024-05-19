@@ -1,0 +1,22 @@
+sort1 uses: Bubble Sort
+
+How do you know?:
+random5000.txt =      reversed5000.txt = 0.111s  sorted5000.txt = 0.043s
+random10000.txt =     reversed10000.txt = 0.265s sorted10000.txt = 0.072s
+random50000.txt =     reversed50000.txt = 5.319s  sorted50000.txt = 1.890s
+
+sort2 uses: Merge Sort
+
+
+
+How do you know?:
+random5000.txt    reversed5000.txt  = 0.041s sorted5000.txt = 0.032s
+random10000.txt   reversed10000.txt = 0.064s    sorted10000.txt = 0.085s
+random50000.txt   reversed50000.txt = 1.174s    sorted50000.txt = 1.447s
+
+sort3 uses: Selection Sort
+
+How do you know?:
+random5000.txt    reversed5000.txt = 0.055s    sorted5000.txt = 0.049s
+random10000.txt   reversed10000.txt = 0.198s    sorted10000.txt = 0.179s
+random50000.txt   reversed50000.txt = 3.428s   sorted50000.txt = 3.582s

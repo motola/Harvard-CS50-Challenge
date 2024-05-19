@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.grid-button');
+            const result = document.querySelector('#result');
+
+        buttons.forEach(button => {
+        button.addEventListener('click', () => {
+
+            buttons.forEach(btn => btn.style.backgroundColor = '#000080'); // Reset to dark navy blue
+            result.textContent = '';
+
+
+            if (button.dataset.answer === 'correct') {
+                button.style.backgroundColor = 'green';
+                result.textContent = 'Correct';
+                result.style.color = 'green';
+            } else {
+                button.style.backgroundColor = 'red';
+                result.textContent = 'Incorrect';
+                result.style.color = 'red';
+            }
+        });
+    });
+
+
+    const input = document.querySelector('#input');
+    const submit = document.querySelector('#submit');
+    const result2 = document.querySelector('#result2');
+    const answer = 'jeremiah';
+
+
+            submit.addEventListener('click', () => {
+            const userInput = input.value.trim().toLowerCase(); 
+            result2.textContent = '';
+
+        if (userInput === answer.toLowerCase()) {
+            input.style.backgroundColor = 'green';
+            result2.textContent = 'Correct!';
+            result2.style.color = 'green';
+        } else {
+            input.style.backgroundColor = 'red';
+            result2.textContent = 'Incorrect!';
+            result2.style.color = 'red';
+        }
+    });
+});
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3> Jesus Christ was born in what City</h3>
+                <div class="grid-container">
+                    <button class="grid-button" data-answer="incorrect">Damascus</button>
+                    <button class="grid-button" data-answer="correct">Bethlehem</button>
+                    <button class="grid-button" data-answer="incorrect">Jerusalem</button>
+                    <button class="grid-button" data-answer="incorrect">Antioch</button>
+                </div>
+                <p id="result"></p>
+            </div>
+
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Who was the prophet in Judah during zedekiah's time</h3>
+
+                    <input type="text" id="input">
+                    <button id="submit">Check Answer</button>
+                    <p id="result2"></p>
+
+            </div>
+        </div>
+    </body>
+</html>
